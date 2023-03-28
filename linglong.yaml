@@ -1,0 +1,25 @@
+package:
+  id: qtgamepad
+  name: qtgamepad
+  kind: lib
+  version: 5.11.3
+  description: |
+    qtgamepad
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qtgamepad-opensource-src.git
+  version: uos/5.11.3
+  commit: 4ffc4e5e83111d414c1aadaabc883e923296ab0d
+
+  patch: []
+build:
+  kind: qmake
